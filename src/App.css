@@ -1,1 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+
+.app {
+  max-width: 560px;
+  margin: 2rem auto;
+  font-family: system-ui, sans-serif;
+}
+
+h1 {
+  margin: 0 0 1rem;
+}
+
+.add-row {
+  display: flex;
+  gap: .5rem;
+  margin-bottom: 1rem;
+}
+
+.add-row input {
+  flex: 1;
+  padding: .5rem;
+}
+
+button {
+  padding: .4rem .7rem;
+}
+
+button:disabled {
+  opacity: .5;
+  cursor: not-allowed;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: .5rem;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .45rem .6rem;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: .4rem;
+}
+
+.item.done span {
+  text-decoration: line-through;
+  color: #777;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.actions {
+  display: flex;
+  gap: .5rem;
+}
+
+.edit-input {
+  padding: .35rem .45rem;
+  min-width: 240px;
+}
 
